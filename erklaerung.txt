@@ -1,0 +1,15 @@
+https://www.youtube.com/watch?v=kOzTCiC25zo
+
+js- dictionary
+let dictionary = {
+    "Hallo": "Hello",
+    "Apfel": "apple"
+sann auf Seite untersuchen
+auf Konsole
+darin- dictionary und es erscheint der >Inhalt des dictionary
+
+<form onsubmit="return false;">- Form wir dnicht neu geladen
+
+localStorage.setItem('dictonary') , JSON.stringify(dictionary));  - Text wird im Webbrowser gespeichert
+
+bis 45:09
