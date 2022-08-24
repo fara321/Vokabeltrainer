@@ -1,20 +1,46 @@
 let dictionary = JSON.parse(localStorage.getItem('dictionary')) || {};
+//let dictionary = {
+//    "HAllo": "Hello",
+//    "Baum": "tree",
+//};
+let randomGermanWord;
 
-
-
-function addCocabulary() {
+function addVocabulary() {
     dictionary[germanText.value] = englishText.value;
 
     germanText.value = '';
     englishText.value = '';
 
-    localStorage.setItem('dictonary'), JSON.stringify(dictionary));
+    localStorage.setItem('dictonary', JSON.stringify(dictionary));
+    render();
+}
 
 function render() {
-    for (let key in dictionary)
-        vocabularyList.innerHTML += '<li>/key</li';
+    vocabularyList.innerHTML = '';
+    for (let key in dictionary) {
+
+        vocabularyList.innerHTML += '<li>${key}  - ${dictionary[key]}</li';
+
+    }
+}
+
+function nextVocabulary() {
+    let obj_keys = Object.keys(window.dictionary);
+    randomGermanWord = obj_keys[Math.floor(Math.random() * obj_keys.length)];
+    word.innerHTML = `${dictionary[randomGermanWord]}?`;
 
 }
 
+function compare() {
+    if (germanText.value == randomGermanWord) {
+        //richtig!
+        Text.innerHTML = 'Richtig!';
+
+    } else {
+        // falsch   
+        Text.innerHTML = 'falsch!';
+    }
+    germanText.value = ();
+    nextVocabulary();
 
 }

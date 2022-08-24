@@ -10,6 +10,9 @@ darin- dictionary und es erscheint der >Inhalt des dictionary
 
 <form onsubmit="return false;">- Form wir dnicht neu geladen
 
-localStorage.setItem('dictonary') , JSON.stringify(dictionary));  - Text wird im Webbrowser gespeichert
+localStorage.setItem('dictonary') , JSON.stringify(dictionary));  - Text wird im Webbrowser gespeicher
 
-bis 45:09
+suche nach javascript random stack overflow:
+https://stackoverflow.com/questions/30061969/select-random-object-from-json
+
+progressive Web App
