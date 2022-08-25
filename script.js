@@ -18,29 +18,27 @@ function addVocabulary() {
 function render() {
     vocabularyList.innerHTML = '';
     for (let key in dictionary) {
-
-        vocabularyList.innerHTML += '<li>${key}  - ${dictionary[key]}</li';
-
+        vocabularyList.innerHTML += `<li>${key} - ${dictionary[key]}</li>`;
     }
 }
 
 function nextVocabulary() {
-    let obj_keys = Object.keys(window.dictionary);
+    let obj_keys = Object.keys(dictionary);
     randomGermanWord = obj_keys[Math.floor(Math.random() * obj_keys.length)];
-    word.innerHTML = `${dictionary[randomGermanWord]}?`;
+    word.innerHTML = `${dictionary[randomGermanWord]} `;
 
 }
 
 function compare() {
     if (germanText.value == randomGermanWord) {
         //richtig!
-        Text.innerHTML = 'Richtig!';
+        text.innerHTML = 'Richtig!';
 
     } else {
         // falsch   
-        Text.innerHTML = 'falsch!';
+        text.innerHTML = 'falsch!';
     }
-    germanText.value = ();
-    nextVocabulary();
+    germanText.value = '');
+nextVocabulary();
 
 }

@@ -15,4 +15,8 @@ localStorage.setItem('dictonary') , JSON.stringify(dictionary));  - Text wird im
 suche nach javascript random stack overflow:
 https://stackoverflow.com/questions/30061969/select-random-object-from-json
 
-progressive Web App
+progressive Web App 
+logomaker.com       studdy
+
+webserver netlify drop
+
